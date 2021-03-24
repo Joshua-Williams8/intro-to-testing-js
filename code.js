@@ -11,7 +11,16 @@ function addTwo(num){
   return 3
 }
 
-function sayHello() {
+function sayHello(name) {
   //return
-  return ""
+  //return ""
+  //return "Hello, Jane!"
+  // if (name === "Alex") {
+  //   return "Hello, Alex!"
+  // } else if(name === "Jane") {
+  //   return "Hello, Jane!"
+  // } else {
+  //   return "Hello, Pat!"
+  // }
+  return "Hello, " + name + "!";
 }
