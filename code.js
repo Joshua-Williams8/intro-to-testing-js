@@ -12,5 +12,6 @@ function addTwo(num){
 }
 
 function sayHello() {
-  return
+  //return
+  return ""
 }
