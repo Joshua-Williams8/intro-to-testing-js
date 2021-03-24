@@ -6,10 +6,6 @@ const helloWorld = function() {
   //return console.log("Hello, World!"); returns undefined
 }
 
-function addTwo(num){
-  //return
-  return 3
-}
 
 function sayHello(name) {
   //return
@@ -29,4 +25,19 @@ function sayHello(name) {
     return "Hello, " + name + "!";
   }
 }
-
+//Old code is getting commited out
+function isFive(num){
+  //return
+  //return false
+  //return true
+  // if (num === 1 || num === -8 ){
+  //   return false
+  // } else {
+  //   return true
+  // }
+  if (num == 5){
+    return true
+  } else {
+    return false
+  }
+}

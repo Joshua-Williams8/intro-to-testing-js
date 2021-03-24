@@ -22,20 +22,7 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
-//My stuff below test
-//When writing code for test, try to get away with bare minimum, so you can make sure you get the
-//outputs you want, so continue to
-describe("addTwo", function() {
-  it("should be a defined function", function() {
-    expect(typeof addTwo).toBe("function");
-  });
-  it("number 1 input should return the number 3",function() {
-    expect(addTwo(1)).toBe(3);
-  });
-  it("-8 input should return -6", function() {
-    expect(addTwo(-8)).toBe(-6);
-  });
-});
+
 describe("sayHello", function() {
   it("Should be a defined function", function(){
     expect(typeof sayHello).toBe("function");
@@ -84,5 +71,30 @@ describe("sayHello", function() {
   });
   it('a function should return "Hello, World!" when executed', function() {
     expect(sayHello(helloWorld)).toBe("Hello, World!");
+  });
+});
+//My stuff below test
+//When writing code for test, try to get away with bare minimum, so you can make sure you get the
+//outputs you want, without changing too much of the code. in a project, cause changing too much
+//could cause more problems than it will fix.
+describe("isFive", function() {
+  it("should be a defined function", function() {
+    expect(typeof isFive).toBe("function");
+  });
+  it('should return a boolean when called', function() {
+    //expecting the type of helloWorld() function toBe returned is "string"
+    expect(typeof isFive()).toBe("boolean");
+  });
+  it("number 5 input should return true",function() {
+    expect(isFive(5)).toBe(true);
+  });
+  it("number 1 input should return false",function() {
+    expect(isFive(1)).toBe(false);
+  });
+  it("-8 input should return false", function() {
+    expect(isFive(-8)).toBe(false);
+  });
+  it('string "5" input should return true',function() {
+    expect(isFive("5")).toBe(true);
   });
 });
