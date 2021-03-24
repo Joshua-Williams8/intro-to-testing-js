@@ -22,5 +22,11 @@ function sayHello(name) {
   // } else {
   //   return "Hello, Pat!"
   // }
-  return "Hello, " + name + "!";
+  //return "Hello, " + name + "!";
+  if (name == parseFloat(name) || typeof name !== "string" || name === "" ) {
+    return "Hello, World!"
+  } else {
+    return "Hello, " + name + "!";
+  }
 }
+

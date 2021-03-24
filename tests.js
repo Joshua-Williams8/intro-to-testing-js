@@ -52,10 +52,37 @@ describe("sayHello", function() {
   it('should return the string "Hello, Josh!" when executed', function() {
     expect(sayHello("Josh")).toBe("Hello, Josh!");
   });
-  it('should return the string "Hello, Alex!" when executed', function() {
+  it('should return the string Hello, Alex!" when executed', function() {
     expect(sayHello("Alex")).toBe("Hello, Alex!");
   });
   it('should return the string "Hello, Pat!" when executed', function() {
     expect(sayHello("Pat")).toBe("Hello, Pat!");
+  });
+  it('undefined should return the string "Hello, World!" when executed', function() {
+    expect(sayHello()).toBe("Hello, World!");
+  });
+  it("true should return \"Hello, World!\" when executed", function() {
+    expect(sayHello(true)).toBe("Hello, World!");
+  });
+  it('false should return "Hello, World!" when executed', function() {
+    expect(sayHello(false)).toBe("Hello, World!");
+  });
+  it('null should return "Hello, World!" when executed', function() {
+    expect(sayHello(null)).toBe("Hello, World!");
+  });
+  it('"" should return "Hello, World!" when executed', function() {
+    expect(sayHello("")).toBe("Hello, World!");
+  });
+  it('2.3 should return "Hello, World!" when executed', function() {
+    expect(sayHello(2.3)).toBe("Hello, World!");
+  });
+  it('"5" should return "Hello, World!" when executed', function() {
+    expect(sayHello("5")).toBe("Hello, World!");
+  });
+  it('an array should return "Hello, World!" when executed', function() {
+    expect(sayHello([1,2])).toBe("Hello, World!");
+  });
+  it('a function should return "Hello, World!" when executed', function() {
+    expect(sayHello(helloWorld)).toBe("Hello, World!");
   });
 });
