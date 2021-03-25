@@ -41,3 +41,23 @@ function isFive(num){
     return false
   }
 }
+
+function isEven(num){
+  //return
+  //return true
+  // if (num === 3) {
+  //   return false
+  // } else return true
+  // if (num === 3 || num === "banana" || num === Infinity || typeof num === "boolean" || num === undefined) {
+  //   return false
+  // } else return true
+  //Since I used or's on the last one I'm going to use if else statements on this one.
+  if  (isNaN(parseFloat(num))) {
+    return false
+  } else if (num % 2 === 0) {
+      return true
+    } else {
+    return false
+  }
+}
+
