@@ -83,3 +83,30 @@ function isVowel(letter) {
     return false
   }
 }
+
+function add(x,y) {
+  //return
+  //return 5
+  // if (x === 2 && y === 3) {
+  //   return 5
+  // } else if (x === -3) {
+  //   return -12
+  // } else if (x === "5") {
+  //   return 11
+  // } else if (x === "-4") {
+  //   return 6
+  // } else if (x === "banana") {
+  //   return NaN
+  // } else if (y === "apples") {
+  //   return NaN
+  // } else if (x === undefined && y === undefined) {
+  //     return NaN
+  //   } else {
+  //   return 7
+  // }
+  if (isNaN((parseFloat(x) + parseFloat(y))) === true ) {
+    return NaN
+  } else {
+    return parseFloat(x) + parseFloat(y)
+  }
+}

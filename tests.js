@@ -166,3 +166,34 @@ describe("isVowel", function() {
     expect(isVowel()).toBe(false);
   });
 });
+
+describe("add", function() {
+  it("should be a defined function", function() {
+    expect(typeof add).toBe("function");
+  });
+  it('should return a number when called', function() {
+    //expecting the type of helloWorld() function toBe returned is "string"
+    expect(typeof add()).toBe("number");
+  });
+  it('2,3 input should return 5',function() {
+    expect(add(2,3)).toBe(5);
+  });
+  it('string -3,-9 input should return -12', function() {
+    expect(add(-3,-9)).toBe(-12);
+  });
+  it('string "5",6 input should return 11',function() {
+    expect(add("5",6)).toBe(11);
+  });
+  it('"-4","10" input should return 6',function() {
+    expect(add("-4",10)).toBe(6);
+  });
+  it('"banana","split" input should return NaN',function() {
+    expect(Number.isNaN(add("banana","split"))).toBe(true);
+  });
+  it('2,"apples" input should return NaN',function() {
+    expect(Number.isNaN(add(2,"apples"))).toBe(true);
+  });
+  it('a blank input should return NaN',function() {
+    expect(Number.isNaN(add())).toBe(true);
+  });
+});
