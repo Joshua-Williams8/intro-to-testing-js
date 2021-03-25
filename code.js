@@ -6,7 +6,7 @@ const helloWorld = function() {
   //return console.log("Hello, World!"); returns undefined
 }
 
-
+//earlier exercises
 function sayHello(name) {
   //return
   //return ""
@@ -25,6 +25,7 @@ function sayHello(name) {
     return "Hello, " + name + "!";
   }
 }
+//exercise 10
 //Old code is getting commited out
 function isFive(num){
   //return
@@ -41,7 +42,7 @@ function isFive(num){
     return false
   }
 }
-
+//Exercise 11
 function isEven(num){
   //return
   //return true
@@ -61,3 +62,24 @@ function isEven(num){
   }
 }
 
+//Exercise 12
+function isVowel(letter) {
+  //return
+  //return true
+
+  //Below code works for all the test defined in readme.
+  //I will still refactor it to work as intended tho.
+  // if (letter === "a" || letter === "A") {
+  //   return true
+  // } else {
+  //   return false
+  // }
+  if (typeof letter !== "string") {
+    return false
+  } else if (letter.length === 1) {
+    letter = letter.toLowerCase();
+    return (letter === "a") || (letter === "e") || (letter === "i") || (letter === "o") || (letter === "u");
+  } else {
+    return false
+  }
+}
